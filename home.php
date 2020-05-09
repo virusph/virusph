@@ -1,10 +1,12 @@
 <?=template_header('Home')?>
-<div id='map' style='width: 100%; height: 93vh;'></div>
-<script>
-mapboxgl.accessToken = 'pk.eyJ1IjoiamNhcXVpbm8wOTQ1IiwiYSI6ImNrOXBvcDNkNjBkNGIzbnFxYnJzcTdydXYifQ.GPkGqSzSUjq5D73w45pIwA';
-var map = new mapboxgl.Map({
-container: 'map',
-style: 'mapbox://styles/mapbox/streets-v11'
-});
-</script>
+<div class="container-fluid">
+  <div class="row" style="margin-top: 4em; height:auto;">
+    <div class="col-xl-6 col-sm-12">
+    <div class="bingwidget" data-type="covid19_modules" data-modules='[{"_type": "stats", "location-id":"/Philippines"},{"_type": "stats", "location-id":"/"},  {"_type": "map", "location-id":"/Philippines"},  {"_type": "trends", "location-id":"/Philippines"}]'></div>
+  <script src="//www.bing.com/widget/bootstrap.answer.js" async=""></script>
+    </div>
+    <div class="col-xl-6 col-sm-12">
+    Test
+  </div>
+</div>
 <?=template_footer()?>
